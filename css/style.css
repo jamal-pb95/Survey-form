@@ -1,0 +1,161 @@
+html,
+body {
+  background-color: #4CAF50;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header,
+footer,
+footer a {
+  color: #fff;
+}
+
+#title {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 25px;
+}
+
+#form-outer {
+  background-color: #F0F0F0;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 10px;
+  width: 75%;
+  max-width: 900px;
+  
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  margin-top: 10px;
+  verticle-align: top;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+#comment {
+  width: 80%;
+  font-size: 1.3em;
+}
+
+.input-field {
+  width: 80%;
+  font-size: 1em;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #0FAD5B;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.5em;
+  height: 40px;
+  width: 196px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+#submit:hover {
+  background-color: #0FAD5B;
+  opacity: 0.6;
+}
+
+.dropdown {
+  width: 85%;
+  font-size: 1em;
+  padding: 10px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#heart {
+  color: #f02;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+@media all and (max-width: 500px) {
+  #title {
+    font-size: 24px;
+  }
+  
+  #form-outer {
+    max-width: 80%;
+    min-width: 320px;
+  }
+  
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+    padding-left: 15px;
+  }
+  .input-field {
+    width: 100%;
+    padding: 0.3em;
+    font-size: 1.2em;
+  }
+  
+  #dropdown,
+  #most-like {
+    width: 100%;
+    font-size: 1.2em;
+  }
+  
+  #comment {
+    width: 100%;
+  }
+  
+  #submit {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}

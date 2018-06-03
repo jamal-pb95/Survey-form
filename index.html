@@ -1,47 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
 <head>
-	<title>FCC Project: Survey Form</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="survey.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
-	<script type="text/javascript" src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat Survey Form</title>
+  <!-- Google font = Ubuntu -->
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Ubuntu'>
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<h1 id="title">Cat Survey Form</h1>
-<div id="form-outer">
+<header>
+  <h1 id="title">Cat Survey Form</h1>
+</header>
+
+<main id="form-outer">
   <p id="description">Let us know how we can improve our Cat's qualities</p>
   <form id="survey-form" method="GET" action="">
-    <div class="rowTab">
-      <div class="labels">
+    <section class="rowTab">
+      <article class="labels">
         <label id="name-label" for="name">* Name: </label>
-      </div>
-      <div class="rightTab">
+      </article>
+      
+      <article class="rightTab">
         <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
+      </article>
+    </section>
+    
+    <section class="rowTab">
+      <article class="labels">
         <label id="email-label" for="email">* Email: </label>
-      </div>
-      <div class="rightTab">
+      </article>
+      
+      <article class="rightTab">
         <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
+      </article>
+    </section>
+    
+    <section class="rowTab">
+      <article class="labels">
         <label id="number-label" for="age">* Age: </label>
-      </div>
-      <div class="rightTab">
+      </article>
+      
+      <article class="rightTab">
         <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="age" required>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
+      </article>
+    </section>
+    
+    <section class="rowTab">
+      <article class="labels">
         <label for="currentPos">Which option best describes your current role?</label>
-      </div>
-      <div class="rightTab">
+      </article>
+      
+      <article class="rightTab">
         <select id="dropdown" name="currentPos" class="dropdown">
           <option disabled value>Select an option</option>
           <option value="student">Student</option>
@@ -50,27 +63,31 @@
           <option value="preferNo">Prefer not to say</option>
           <option value="other">Other</option>
         </select>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
+      </article>
+    </section>
+    
+    <section class="rowTab">
+      <article class="labels">
         <label for="userRatings">* How likely is that you would recommend our cat's organization to a friend?</label>
-      </div>
-      <div class="rightTab">
+      </article>
+      
+      <article class="rightTab">
         <ul style="list-style:none;">
           <li class="radio"><label>Definitely<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
           <li class="radio"><label>Maybe<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
           <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
         </ul>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
+      </article>
+    </section>
+    
+    <section class="rowTab">
+      <article class="labels">
         <label for="most-like">Which type of cat beerds do you like most: </label>
-      </div>
-      <div class="rightTab">
+      </article>
+      
+      <article class="rightTab">
         <select id="most-like" name="mostLike" class="dropdown">
-          <option disabled selected value>Select an option</option>
+          <option disabled value>Select an option</option>
           <option value="bengal">Bengal</option>
           <option value="abyssinian">Abyssinian</option>
           <option value="burmese">Burmese</option>
@@ -80,14 +97,16 @@
           <option value="siamese">Siamese</option>
           <option value="persian">Persian</option>
         </select>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
+      </article>
+    </section>
+    
+    <section class="rowTab">
+      <article class="labels">
         <label for="preferences">Things that should be improved in the future
 (Check all that apply): </label>
-      </div>
-      <div class="rightTab">
+      </article>
+      
+      <article class="rightTab">
         <ul id="preferences" style="list-style:none;">
           <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Cat's Sociability</label></li>
           <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Cat's Communication</label></li>
@@ -101,22 +120,27 @@
           <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
           <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Additional Cat's Resourses</label></li> 
         </ul>
-      </div>
-    </div>
-    <div class="rowTab">
-      <div class="labels">
+      </article>
+    </section>
+    
+    <section class="rowTab">
+      <article class="labels">
         <label for="comment">Any comments or Suggetions? </label>
-      </div>
-      <div class="rightTab">
+      </article>
+      
+      <article class="rightTab">
         <textarea id="comment" class="input-field" style="height: 50px; resize: verticle;" name="comment" placeholder="Enter your comments here....."></textarea>
-      </div>
-    </div>
+      </article>
+    </section>
     <button id="submit" type="submit">Submit</button>
   </form>
-</div>
+</main>
 
 <footer>
-      <p class="">Design &amp; Developed by <a target="_blank" href="https://jamal-pb95.github.io/">Jamal Uddin</a></p>
+  <p class="">Made with <span id="heart"> ❤ </span> by <a target="_blank" href="https://jamal-pb95.github.io/">Jamal Uddin</a></p>
+
+  <p><span>Note:</span> This is 2<sup>nd</sup> out of 5 required project for <a href="https://www.freecodecamp.org/">freeCodeCamp's</a> "Responsive Design" Certification</p>
 </footer>
+  
 </body>
 </html>
